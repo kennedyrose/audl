@@ -1,0 +1,90 @@
+body {
+	min-height: 740px;
+}
+#cont{
+	width: 100%;
+	height: 100%;
+}
+
+// Mobile scroll arrows
+$arrowMargin: 20px;
+$arrowSize: 50px;
+.slide-supported #leftArrow, .slide-supported #rightArrow{
+	visibility: visible !important;
+}
+#leftArrow, #rightArrow{
+	opacity: 0.7;
+	position: fixed;
+	bottom: $arrowMargin;
+	width: $arrowSize;
+	height: $arrowSize;
+	display: none;
+	pointer-events: all;
+	visibility: hidden;
+}
+#leftArrow{
+	left: $arrowMargin;
+}
+#rightArrow{
+	right: $arrowMargin;
+}
+
+
+.fallback-message{
+	width: 780px;
+	padding: 10px 10px 0;
+	margin: 10px auto;
+	border: 1px solid #333;
+	background: #fff;
+}
+
+.fallback-message p{
+	margin-bottom: 10px;
+}
+
+.slide-supported .fallback-message{
+	display: none;
+}
+
+
+.step{
+	position: relative;
+	width: 900px;
+	padding: 40px;
+	margin: 20px auto;
+	box-sizing: border-box;
+	font-size: 48px;
+	line-height: 1.5;
+}
+
+.slide-enabled .step{
+	margin: 0;
+	opacity: 0.25;
+	transition: opacity 1s;
+}
+
+.slide-enabled .step.active {
+	opacity: 1;
+}
+
+#overview {
+	display: none;
+}
+
+.slide-on-overview .step {
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+.slide-enabled {
+	pointer-events: none;
+}
+.slide-enabled #slide{
+	pointer-events: auto;
+}
+
+
+.gc-bubbleDefault{
+	pointer-events: all !important;
+}

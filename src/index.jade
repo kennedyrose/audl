@@ -1,0 +1,169 @@
+doctype html
+html(lang="en")
+	head(charset="utf-8")
+		meta(name="viewport" content="width=1024")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		title AUDL // free music radio application with the largest library of music
+		meta(name="author" content="Kennedy Rose")
+		link(rel="stylesheet", type="text/css", href="css/style.css")
+		link(href='https://fonts.googleapis.com/css?family=Rock+Salt|Roboto:100,300' rel='stylesheet' type='text/css')
+
+	body.slide-not-supported
+
+		#cont
+
+
+			#slide
+
+
+				#home.step
+					#blocks
+						#topBlock.block
+						#leftBlock.block
+						#logoBlock.block
+							img(src="img/cutout.svg")
+						#rightBlock.block
+						#bottomBlock.block
+					#headline <b>AUDL</b> is a free music radio application with the largest library of music in the world.
+
+				#download.step(data-z="2000" data-x="500" data-y="500" data-rotate-y="10")
+					h1 Download AUDL
+					.ver v0.5.0 beta
+					#dlLinks
+						img.osLogo(src="img/os-win.svg")
+						.osLinks
+							a(href="https://github.com/AUDL/audlapp/releases/download/0.5.0/audl-win64.exe") Windows 64bit
+							a(href="https://github.com/AUDL/audlapp/releases/download/0.5.0/audl-win32.exe") Windows 32bit
+						.clear
+
+						img.osLogo(src="img/os-mac.svg")
+						.osLinks
+							a(href="https://github.com/AUDL/audlapp/releases/download/0.5.0/audl-osx64.dmg") Mac 64bit
+							a(href="https://github.com/AUDL/audlapp/releases/download/0.5.0/audl-osx32.dmg") Mac 32bit
+						.clear
+
+						img.osLogo(src="img/os-linux.svg")
+						.osLinks
+							a(href="https://github.com/AUDL/audlapp/releases/download/0.5.0/audl-linux64.tar.gz") Linux 64bit
+							a(href="https://github.com/AUDL/audlapp/releases/download/0.5.0/audl-linux32.tar.gz") Linux 32bit
+						.clear
+
+
+				#features.step(data-z="4000" data-x="1000" data-y="1000" data-rotate-y="20")
+					h1 Features
+					ul
+						li Largest selection of music in the world
+						li No account required
+						li No subscription required
+						li Playlist manager
+						li Customizable interface
+						li Available on Windows, Mac, and Linux (mobile coming soon)
+						li Aggregates content from the leading music sources
+
+				#demoVideo.step.center(data-z="6000" data-x="1500" data-y="1500" data-rotate-y="30")
+					iframe(width="750" height="493" src="https://www.youtube.com/embed/NiXVWYjDLqA?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;vq=hd1080" frameborder="0" allowfullscreen="" class="video")
+
+				#subscribe.step(data-z="8000" data-x="2000" data-y="2000" data-rotate-y="40")
+					h1 Stay Updated
+					form(action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=audl', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true")
+						input(type="text" name="email" placeholder="Your Email")
+						input(type="hidden" value="audl" name="uri")
+						input(type="hidden" name="loc" value="en_US")
+						input(type="submit")
+					#social
+						div or
+						br
+						a(href="https://twitter.com/AudlMusic" target="_blank")
+							img(src="img/icon-twitter.svg")
+						a(href="https://www.facebook.com/audlmusic" target="_blank")
+							img(src="img/icon-facebook.svg")
+						a(href="http://audlmusic.tumblr.com" target="_blank")
+							img(src="img/icon-tumblr.svg")
+						a(href="https://github.com/AUDL" target="_blank")
+							img(src="img/icon-github.svg")
+						a(href="http://audlmusic.tumblr.com/rss" target="_blank")
+							img(src="img/icon-rss.svg")
+
+
+				#faq.step(data-scroll data-z="10000" data-x="2500" data-y="2500" data-rotate-y="50")
+					h1 Frequently Asked Questions
+					.question How does it work?
+					.answer Audl aggregates audio from sites like YouTube, SoundCloud, and rdio. This gives it a much larger selection than any one of those sources alone. Audl is actually a browser with a music player built on top of it. The music player runs alongside the app and plays any audio files that it finds within the browser.
+
+					.question Is Audl legal?
+					.answer Audl gets all of its content from legal websites using APIs from those websites. All of these websites adhere to DMCA laws and disallow the uploading of infringing content.
+
+					.question Do the content owners get paid?
+					.answer Yes. Since Audl is just a browser on the back end, any advertising on the page will still load. Audl never just downloads an audio file. It streams it from a website's fully loaded page.
+
+					.question So Audl plays ads before songs?
+					.answer Audl will do its best to identify the high quality recordings that have text/images ads rather than audio/video ads. But if it can't do that, it will play the ad first. So users may sometimes hear ads.
+
+					.question Does it support existing music libraries?
+					.answer Not yet, but that is in the works! Subscribe to the mailing list for updates.
+
+					.question Can I share playlists between multiple devices?
+					.answer Not yet, but eventually. We are trying to find the best way to go about doing this.
+
+					.question Can I import my playlists from Spotify, Pandora, etc.?
+					.answer This will be integrated in the official release. Subscribe to the mailing list for updates.
+
+					.question Will Audl ever cost money?
+					.answer No. There are no plans to monetize Audl and it will always remain free.
+
+					.question Any plans to support mobile devices?
+					.answer Yes! We will be looking into mobile options once Audl is out of beta. Subscribe to stay updated.
+
+					.question What websites does Audl collect content from?
+					.answer Last.fm, SoundCloud, and YouTube currently. We are about to add Google and rdio as well. This list will grow as we investigate new websites and confirm their legal status.
+
+					.question I am an artist/content owner. How do I remove my content from Audl?
+					.answer Audl does not save or collect any music on any server. Audl only plays content directly from these websites and we have no control over the content they choose to display. You can get your content removed from these websites by sending them a DMCA request. If it doesn't exist on those sites, Audl cannot access it.
+
+				#contact.step(data-z="12000" data-x="3000" data-y="3000" data-rotate-y="60")
+					h1 Contact Us
+					form#contactForm(action="https://formspree.io/soundleyapp@gmail.com" method="post")
+						input#yourEmail(name="_replyto" type="text" placeholder="Your email address")
+						textarea#yourMessage(name="message" placeholder="Your message")
+						input#sendEmail(type="submit" value="Send")
+
+
+				#navMenu.step(data-x="0" data-y="0" data-rotate-y="180" data-z="-200" data-ignore)
+					ul
+						li
+							a.navLink(href="#home") Home
+						li
+							a.navLink(href="#download") Download
+						li
+							a.navLink(href="#features") Features
+						li
+							a.navLink(href="#demoVideo") Video
+						li
+							a.navLink(href="#subscribe") Mailing List / Social
+						li
+							a.navLink(href="#faq") F.A.Q.
+						li
+							a.navLink(href="#contact") Contact
+
+			.fallback-message
+				p Your browser doesn't support the features required, so you are presented with a simplified version of this website.
+				p To see all the cool stuff please use the latest Chrome, Safari or Firefox browser.
+
+		#bg
+			video#bgVid(autoplay="true", loop)
+				source(src="img/bg1.webm" type="video/webm")
+				source(src="img/bg1.mp4" type="video/mp4")
+
+		img#leftArrow(src="img/arrow-left.svg")
+		img#rightArrow(src="img/arrow-right.svg")
+
+		#navIcon
+			span
+			span
+			span
+			span
+			span
+			span
+
+		script(src="js/script.js")
+		script (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-70093270-1', 'auto'); ga('send', 'pageview');
