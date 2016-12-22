@@ -182,6 +182,24 @@
 		"oAP": "\/docs\/js\/script.js.map",
 		"oF": 0
 		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/src\/css\/.sass-cache\/6bc0cd4a986aee9dc0863f1074a628f5f60f4c32\/_bg.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -2405,21 +2423,21 @@
 	"languageDefaultsUserDefined": [
 		{
 			"autoOutputAction": 2,
-			"autoOutputPathFilenamePattern": "*.webm",
-			"autoOutputPathRelativePath": "",
-			"autoOutputPathReplace1": "src",
-			"autoOutputPathReplace2": "docs",
-			"autoOutputPathStyle": 3,
-			"fileExtension": "webm"
-			},
-		{
-			"autoOutputAction": 2,
 			"autoOutputPathFilenamePattern": "*.mp4",
 			"autoOutputPathRelativePath": "",
 			"autoOutputPathReplace1": "src",
 			"autoOutputPathReplace2": "docs",
 			"autoOutputPathStyle": 3,
 			"fileExtension": "mp4"
+			},
+		{
+			"autoOutputAction": 2,
+			"autoOutputPathFilenamePattern": "*.webm",
+			"autoOutputPathRelativePath": "",
+			"autoOutputPathReplace1": "src",
+			"autoOutputPathReplace2": "docs",
+			"autoOutputPathStyle": 3,
+			"fileExtension": "webm"
 			}
 		],
 	"previewPathAddition": "",
