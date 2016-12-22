@@ -2405,21 +2405,21 @@
 	"languageDefaultsUserDefined": [
 		{
 			"autoOutputAction": 2,
-			"autoOutputPathFilenamePattern": "*.mp4",
-			"autoOutputPathRelativePath": "",
-			"autoOutputPathReplace1": "src",
-			"autoOutputPathReplace2": "docs",
-			"autoOutputPathStyle": 3,
-			"fileExtension": "mp4"
-			},
-		{
-			"autoOutputAction": 2,
 			"autoOutputPathFilenamePattern": "*.webm",
 			"autoOutputPathRelativePath": "",
 			"autoOutputPathReplace1": "src",
 			"autoOutputPathReplace2": "docs",
 			"autoOutputPathStyle": 3,
 			"fileExtension": "webm"
+			},
+		{
+			"autoOutputAction": 2,
+			"autoOutputPathFilenamePattern": "*.mp4",
+			"autoOutputPathRelativePath": "",
+			"autoOutputPathReplace1": "src",
+			"autoOutputPathReplace2": "docs",
+			"autoOutputPathStyle": 3,
+			"fileExtension": "mp4"
 			}
 		],
 	"previewPathAddition": "",
